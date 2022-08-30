@@ -12,7 +12,7 @@ declare var bridge: PublicApiBridgeService;
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  title = 'ipe';
+  title = 'vertigo';
   // user$: Observable<User>;
   isAuthenticated: boolean;
   @Output()
