@@ -30,7 +30,7 @@ export const environment = {
   site: 'vertigoapp',
   apiGatewaySettings: {
     // endpointUrl: 'https://localhost:44340',
-    endpointUrl: "https://vertigo.druidcloud.dev/vertigoapp"
+    endpointUrl: "https://vertigo.druidcloud.dev/rollthecloudinc/vertigoapp-objects/shapeshifter"
   },
   mediaSettings: {
     endpointUrl: 'https://vertigo.druidcloud.dev/vertigoapp/media',
