@@ -28,13 +28,13 @@ export const environment = {
   production: true,
   site: 'vertigoapp',
   apiGatewaySettings: {
-    endpointUrl: 'https://9iac3wy8ej.execute-api.us-east-1.amazonaws.com/spearhead',
+    endpointUrl: "https://vertigo.druidcloud.io/rollthecloudinc/vertigoapp-objects-prod/shapeshifter"
   },
   mediaSettings: {
-    endpointUrl: 'https://9iac3wy8ej.execute-api.us-east-1.amazonaws.com/media',
+    endpointUrl: 'https://vertigo.druidcloud.io/vertigoapp/media',
     cloudinaryUrl: 'https://api.cloudinary.com/v1_1/dj4vvkgzw',
     uploadPreset: 'i0hm4opm',
-    imageUrl: '@todo',
+    imageUrl: 'https://vertigo.druidcloud.io/vertigoapp',
     bucket: 'classifieds-ui-prod',
     prefix: 'media/'
   },
@@ -81,6 +81,8 @@ export const environment = {
     client_id: '37lke0kuqac07fs1mk9mp2h471',
     redirect_uri: 'https://vertigo.druidcloud.app/auth-callback',
     silent_redirect_uri: 'https://vertigo.druidcloud.app/silent-refresh.html',
+    //redirect_uri: 'http://localhost:4000/auth-callback',
+    //silent_redirect_uri: 'https://localhost:4000/silent-refresh.html',
     response_type: "code",
     scope:"openid profile aws.cognito.signin.user.admin ads_api/ads_api taxonomy_api/taxonomy_api chat/chat media_api/media_api profiles_api/profiles_api", /*'ads_api media_api chat IdentityServerApi taxonomy_api api_gateway",*/
     filterProtocolClaims: true,

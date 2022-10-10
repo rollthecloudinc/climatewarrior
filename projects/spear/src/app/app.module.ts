@@ -55,12 +55,15 @@ import { panelpages } from '../environments/panelpages';
 import { createEditMatcher, createMatcher, EditPanelPageComponent, PagesModule, PanelPageRouterComponent, PAGES_SETTINGS, PagesSettings } from '@rollthecloudinc/pages';
 import { panelpages as panelpages2 } from '../data/panelpages';
 import { OrdainModule } from '@rollthecloudinc/ordain';
+import { DruidModule } from './druid.module';
+import { DparamModule } from '@rollthecloudinc/dparam';
+import { DetourModule } from '@rollthecloudinc/detour';
 
 // import { FlexLayoutServerModule } from '@angular/flex-layout/server';
 // import { MonacoEditorModule } from 'ngx-monaco-editor';
 
 const routes = [
-  { path: 'auth-callback', component: AuthCallbackComponent },
+  //{ path: 'auth-callback', component: AuthCallbackComponent },
   ...panelpages.map(([id, path]) =>  ({ matcher: createEditMatcher(new PanelPage({ id, layoutType: '', displayType: '', gridItems: [], panels: [], layoutSetting: undefined, rowSettings: [], path })), component: EditPanelPageComponent, data: { panelPageListItem: new PanelPage({ id, layoutType: '', displayType: '', gridItems: [], panels: [], layoutSetting: undefined, rowSettings: [], path }) } })),
   ...panelpages.map(([id, path]) =>  ({ matcher: createMatcher(new PanelPage({ id, layoutType: '', displayType: '', gridItems: [], panels: [], layoutSetting: undefined, rowSettings: [], path })), component: PanelPageRouterComponent, data: { panelPageListItem: new PanelPage({ id, layoutType: '', displayType: '', gridItems: [], panels: [], layoutSetting: undefined, rowSettings: [], path }) } })),
   { path: '**', component: CatchAllRouterComponent, canActivate: [ CatchAllGuard ] }
@@ -160,7 +163,10 @@ export function markedOptionsFactory(): MarkedOptions {
     NgxDropzoneModule,
     ReactModule,
     PagesModule,
-    OrdainModule
+    OrdainModule,
+    DparamModule,
+    DetourModule,
+    DruidModule // Contains APP specific conponents - keep app.mdoule file as pure as possible for easy updates ...
   ],
   providers: [
     CatchAllGuard,
