@@ -3,7 +3,7 @@
 # Hedge
 Distribute web traffic across data centers using renewable energy.
 
-# Shapeshifter
+# Store
 Deliver JSON and Media files too Github repositories.
 
 # Druid
