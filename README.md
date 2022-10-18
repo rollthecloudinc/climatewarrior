@@ -1,7 +1,12 @@
-Vertigo App druid website.
+War chest of viscous developer tools to battle climate change on the web.
 
-Primary function install app and provide docs for usage and api – KISS.
+![](https://smeskey-github-prod.s3.amazonaws.com/projects/climate-warrior/climate_warrior_identity_200.png)
 
-Design Mockup
+# Hedge
+Distribute web traffic across data centers using renewable energy.
 
-![vertigoapp](https://user-images.githubusercontent.com/73197190/190632223-6010b9aa-1719-4791-ba7a-b94d9a81449e.png)
+# Shapeshifter
+Deliver JSON and Media files too Github repositories.
+
+# Druid
+Develop low energy and environmental impact web experiences.
