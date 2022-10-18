@@ -3,8 +3,12 @@
 # Hedge
 Distribute web traffic across data centers using renewable energy.
 
+https://HEDGE.earth
+
 # Store
 Deliver JSON and Media files too Github repositories.
+
+https://climatewarrior.store
 
 # Druid
 Develop low energy and environmental impact web experiences.
