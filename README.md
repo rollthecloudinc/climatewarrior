@@ -21,7 +21,7 @@ https://climatewarrior.cloud – coming soon
 
 ## Apparel
 
-https://www.bonfire.com/slay-carbon-emissions/
+https://www.bonfire.com/store/climatewarrior/
 
 ## Donations
 
