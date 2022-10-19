@@ -3,14 +3,14 @@
 # Hedge
 Hedge web traffic across data centers using renewables.
 
-https://hedge.earth
+https://hedge.earth - coming soon
 
 # Store
 Store JSON and Media files on Github.
 
-https://climatewarrior.store
+https://climatewarrior.store – coming soon
 
 # Develop
 Develop low energy  web experiences.
 
-https://druid.land
+https://druid.land – coming soon
