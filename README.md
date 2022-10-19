@@ -8,7 +8,7 @@ Hedge web traffic across data centers using renewables.
 https://hedge.earth - coming soon
 
 ## Store
-Store JSON and Media files on Github.
+Store JSON and media files on Github.
 
 https://climatewarrior.store – coming soon
 
