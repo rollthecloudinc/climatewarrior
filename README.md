@@ -12,10 +12,10 @@ Store JSON and Media files on Github.
 
 https://climatewarrior.store – coming soon
 
-## Develop
-Develop low energy  web experiences.
+## Create
+Create low energy and code web experiences.
 
-https://druid.land – coming soon
+https://climatewarrior.cloud – coming soon
 
 # Support
 
