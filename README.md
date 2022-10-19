@@ -21,4 +21,8 @@ https://druid.land – coming soon
 
 ## Apparel
 
+https://www.bonfire.com/slay-carbon-emissions/
+
 ## Donations
+
+https://www.paypal.com/fundraiser/charity/4587641
