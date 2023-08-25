@@ -2,6 +2,8 @@ const ModuleFederationPlugin = require("webpack/lib/container/ModuleFederationPl
 const mf = require("@angular-architects/module-federation/webpack");
 const path = require("path");
 const share = mf.share;
+const tailwindcss = require('tailwindcss');
+const autoprefixer = require('autoprefixer');
 
 const sharedMappings = new mf.SharedMappings();
 sharedMappings.register(
@@ -25,6 +27,8 @@ module.exports = {
     outputModule: true
   },
   plugins: [
+    tailwindcss,
+    autoprefixer,
     new ModuleFederationPlugin({
         library: { type: "module" },
 
@@ -41,10 +45,16 @@ module.exports = {
         },*/
 
         shared: share({
+          "@angular/platform-browser": { singleton: true, strictVersion: true, requiredVersion: 'auto' },
+          "@angular/platform-browser/animations": { singleton: true, strictVersion: true, requiredVersion: 'auto' },
+
           "@angular/core": { singleton: true, strictVersion: true, requiredVersion: 'auto' }, 
           "@angular/common": { singleton: true, strictVersion: true, requiredVersion: 'auto' }, 
           "@angular/common/http": { singleton: true, strictVersion: true, requiredVersion: 'auto' }, 
           "@angular/router": { singleton: true, strictVersion: true, requiredVersion: 'auto' },
+
+          "@angular/cdk": { singleton: true, strictVersion: true, requiredVersion: 'auto', includeSecondaries: true },
+          "@angular/material": { singleton: true, strictVersion: true, requiredVersion: 'auto', includeSecondaries: true },
 
           "@rollthecloudinc/utils": { singleton: true, strictVersion: false, requiredVersion: 'auto' },
           "@rollthecloudinc/attributes": { singleton: true, strictVersion: false, requiredVersion: 'auto' },
