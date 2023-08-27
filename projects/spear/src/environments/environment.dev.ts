@@ -28,6 +28,7 @@ const signingKeys = {
 export const environment = {
   production: false,
   site: 'vertigoapp',
+  apiGatewaySettings: {
     // endpointUrl: 'https://localhost:44340',
     endpointUrl: "https://us-east-1.climateaware-dev.eco/rollthecloudinc/vertigoapp-objects/shapeshifter"
   },
