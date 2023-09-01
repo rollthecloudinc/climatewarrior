@@ -28,13 +28,14 @@ export const environment = {
   production: true,
   site: 'vertigoapp',
   apiGatewaySettings: {
-    endpointUrl: "https://vertigo.druidcloud.io/rollthecloudinc/vertigoapp-objects-prod/shapeshifter"
+    // endpointUrl: 'https://localhost:44340',
+    endpointUrl: "https://us-east-1.climateaware.eco/rollthecloudinc/vertigoapp-objects-prod/shapeshifter"
   },
   mediaSettings: {
-    endpointUrl: 'https://vertigo.druidcloud.io/vertigoapp/media',
+    endpointUrl: 'https://us-east-1.climateaware.eco/vertigoapp/media',
     cloudinaryUrl: 'https://api.cloudinary.com/v1_1/dj4vvkgzw',
     uploadPreset: 'i0hm4opm',
-    imageUrl: 'https://vertigo.druidcloud.io/vertigoapp',
+    imageUrl: 'https://us-east-1.climateaware.eco/vertigoapp',
     bucket: 'classifieds-ui-prod',
     prefix: 'media/'
   },
