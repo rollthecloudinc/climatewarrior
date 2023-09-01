@@ -77,10 +77,10 @@ export const environment = {
     region: ''
   },
   clientSettings: {
-    authority: 'https://sso.druidcloud.io',
+    authority: 'https://sso.climateaware.eco',
     client_id: '37lke0kuqac07fs1mk9mp2h471',
-    redirect_uri: 'https://vertigo.druidcloud.app/auth-callback',
-    silent_redirect_uri: 'https://vertigo.druidcloud.app/silent-refresh.html',
+    redirect_uri: 'https://climatewarrior.eco/auth-callback',
+    silent_redirect_uri: 'https://climatewarrior.eco/silent-refresh.html',
     //redirect_uri: 'http://localhost:4000/auth-callback',
     //silent_redirect_uri: 'https://localhost:4000/silent-refresh.html',
     response_type: "code",
@@ -92,11 +92,11 @@ export const environment = {
     userStore: undefined,
     metadata: {
       issuer: "https://cognito-idp.us-east-1.amazonaws.com/us-east-1_ObsPF5JdM",
-      authorization_endpoint: "https://sso.druidcloud.io/oauth2/authorize",
-      userinfo_endpoint: "https://sso.druidcloud.io/oauth2/userInfo",
-      end_session_endpoint: "https://sso.druidcloud.io/logout",
-      token_endpoint: "https://sso.druidcloud.io/oauth2/token",
-      jwks_uri: "https://sso.druidcloud.io/us-east-1_z8PhK3D8V"
+      authorization_endpoint: "https://sso.climateaware.eco/oauth2/authorize",
+      userinfo_endpoint: "https://sso.climateaware.eco/oauth2/userInfo",
+      end_session_endpoint: "https://sso.climateaware.eco/logout",
+      token_endpoint: "https://sso.climateaware.eco/oauth2/token",
+      jwks_uri: "https://sso.climateaware.eco/us-east-1_z8PhK3D8V"
     },
     signingKeys: signingKeys.keys
   }
