@@ -375,10 +375,13 @@ Your data's security is our topmost priority. Our API uses secure HTTPS connecti
 
 ## Contribute
  
-We welcome contributions! If you want to enhance ClimateWarrior, feel free to submit a pull request.
-License
- 
-ClimateWarrior is available under the MIT License.
+ClimateWarrior is a pioneering GitHub App, dedicated to creating eco-friendly software and combating climate change. We transform GitHub repositories into an environmentally responsible database, minimizing the carbon footprint of software operations. Beyond software development, we are committed to a charitable cause, supporting initiatives that fight climate change and promote sustainability. We welcome contributions in many forms. Aside from submitting pull requests to enhance ClimateWarrior, we are also grateful for your financial support to our charity cause. You can donate through the following avenues:
+
+* GoFundMe Campaign: Help us reach our funding goals by donating to our GoFundMe campaign. Your contribution will go a long way in supporting our mission.
+* PayPal Donations: PayPal is a quick and secure way to contribute. You can choose to make a one-time donation or set up a recurring donation to support us on an ongoing basis.
+* Bonfire Apparel Shop: Show your support and raise awareness by wearing ClimateWarrior gear. Visit our Bonfire shop to view our collection of eco-friendly t-shirts, hoodies, and more.
+
+Remember, every contribution, no matter how small, helps us in our fight against climate change. Thank you for your support!
 
 ## Contact
  
