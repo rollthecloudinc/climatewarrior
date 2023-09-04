@@ -363,7 +363,11 @@ This JSON data represents the configuration of a webpage named 'index' for the s
 
 ## How it works
  
-ClimateWarrior transforms your GitHub repository into a green, climate-aware database. The REST API enables you to perform CRUD operations directly onto your repository, with all changes tracked by Git's versioning system. Each request is handled by an edge proxy near you, which delegates compute to the data center with the lowest electricity grid carbon intensity—significantly reducing your software's carbon footprint.
+ClimateWarrior transforms your GitHub repository into a green, climate-aware database. It allows you to perform CRUD (Create, Read, Update, Delete) operations directly onto your repository using its REST API. All changes to your data are tracked by Git's powerful versioning system, providing an automatic historical record of your data.
+
+In an effort to minimize the carbon footprint of software operations, each API request you make is handled by an edge proxy located near you. This edge proxy then delegates the compute work to a data center within the geography with the lowest electricity grid carbon intensity. This could be any one of our globally distributed services located in Montreal, Ashburn VA, San Francisco, Dublin, London, Frankfurt, Stockholm, or Norway East.
+
+This system not only reduces latency and improves performance but also significantly reduces the carbon emissions associated with data storage and retrieval. By using ClimateWarrior, you're not just taking advantage of a powerful data storage solution, but also contributing to the fight against climate change.
 
 ## Security
  
