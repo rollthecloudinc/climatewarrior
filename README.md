@@ -192,7 +192,21 @@ Here's an example of a JSON request for creating a new home listing:
 
 This JSON request includes listing with property details and seller information. property provides information such as the area, number of bedrooms and bathrooms, property type, year built, square footage, and price. seller details include the seller's ID, name, and contact information. listingStatus indicates the current status of the listing, and description provides a brief overview of the property. photos is an array that includes URLs to images of the property.
 
-> Please refer to the associated request snippet and screen capture from Insomnia for step-by-step instructions.
+```javascript
+const options = {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json',
+    Authorization: 'Bearer TOKEN'
+  },
+  body: '{"id":"123e4567-e89b-12d3-a456-426614174000","listing":{"property":{"area":"Downtown, NY","bedrooms":3,"bathrooms":2,"propertyType":"Apartment","yearBuilt":2015,"squareFeet":1500,"price":500000},"seller":{"sellerId":"123e4sde-e89b-12d3-a456-426614174f34","name":"John Doe","contact":"john@example.com"},"listingStatus":"Available","description":"A luxurious 3 BHK apartment located in the heart of the city, equipped with modern amenities. Great view of the downtown skyline.","photos":["image1_url","image2_url"]}}'
+};
+
+fetch('https://proxy.climateaware.eco/db/rollthecloudinc/vertigoapp-objects-prod/shapeshifter/examples/astral/realestate/123e4567-e89b-12d3-a456-426614174000', options)
+  .then(response => response.json())
+  .then(response => console.log(response))
+  .catch(err => console.error(err));
+```
 
 ### Posting on the Public Forum of Zing.eco
  
