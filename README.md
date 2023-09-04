@@ -281,7 +281,21 @@ Here's an example of a JSON request for creating a new post:
 
 In this JSON request, post contains the userId, title, content, tags, and attachments. userId is the unique identifier for the user. title and content provide the title and body of the post respectively. tags is an array of tags relevant to the post. attachments is an array that includes URLs to any attachments for the post.
 
-> Please refer to the associated request snippet and screen capture from Insomnia for step-by-step instructions.
+```javascript
+const options = {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json',
+    Authorization: 'Bearer eyJraWQiOiJ6T2JCUTZRZlI1SG5LQUpkOUhob09ibUpxb2pyb3BhejU0enFmMisxenFrPSIsImFsZyI6IlJTMjU2In0.eyJhdF9oYXNoIjoiSWpOS3ExZ3hOOGJfSHgzSmNCLVYtdyIsInN1YiI6ImMzNTc5NDM2LTY2ZWItNDRhYS1hZjhhLWYxNThjOWQ3N2MzMSIsImNvZ25pdG86Z3JvdXBzIjpbInByb2QtYWRtaW4tYXV0aC11c2VyLWdyb3VwIl0sImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJjb2duaXRvOnByZWZlcnJlZF9yb2xlIjoiYXJuOmF3czppYW06Ojc0MzYxNDM1MTMyMTpyb2xlXC9Db2duaXRvX2NsYXNzaWZpZWRzX3Byb2RBZG1pbkF1dGhfUm9sZSIsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC51cy1lYXN0LTEuYW1hem9uYXdzLmNvbVwvdXMtZWFzdC0xX09ic1BGNUpkTSIsImNvZ25pdG86dXNlcm5hbWUiOiJuZy1kcnVpZCIsImN1c3RvbTpnaXRodWJBY2Nlc3NUb2tlbiI6ImdodV9LTHN3T29qbVF5Rno5OGFOZEdqelJVVnlkYkZlaVEzQ1d5TWQiLCJjdXN0b206Z2l0aHViUmVmcmVzaFRva2VuIjoiZ2hyX1B3aEJ3NDJxOEFSeFp1OWJCYnFCU2EzSFNwVkxVS2tWOVRER2cxYnQ5aDZPUUd4Nlh2WklJTmlBTjkwQ0xNd2JMOW1rYVYzaE5ja0oiLCJjb2duaXRvOnJvbGVzIjpbImFybjphd3M6aWFtOjo3NDM2MTQzNTEzMjE6cm9sZVwvQ29nbml0b19jbGFzc2lmaWVkc19wcm9kQWRtaW5BdXRoX1JvbGUiXSwiYXVkIjoiMzdsa2Uwa3VxYWMwN2ZzMW1rOW1wMmg0NzEiLCJldmVudF9pZCI6IjZjZGQ0MDI0LTdjOGEtNGY5MC05YmE3LWNlN2Q0OWFlNWQ2NSIsInRva2VuX3VzZSI6ImlkIiwiYXV0aF90aW1lIjoxNjkzODI2OTgwLCJleHAiOjE2OTM4MzA1ODAsImlhdCI6MTY5MzgyNjk4MCwiZW1haWwiOiJhbmd1bGFyLmRydWlkQGdtYWlsLmNvbSJ9.a9xuZ0Hw-fT--DFkV8pF4rxPkV_rQrXPDp0miwgRUzPv9J6qJJYsBQ1WdGDSxOyvSrw_jnhXOc0XplZQFelnfEF0CkQbz6ot63rYpSGge0wgVlldbcZZBoRhNOJIIMY-WPpbD2VjCMjO5iPGmX6W3O7YlUsxqzriUkGyQV0HpQpwsapZ4l8Sdfo8nNM9D3Im69IiOs80dPwhjRuoaNuQ9FkxYDCoAJi_r2yxWTRrMdaWCS_s94Pt0qApH5S_YNta5b_kWX05Je7dqrbAA-T-3iLXDe_Gvg64-31WwFsN5g_bmHQ-4jrnUk7Tvur9xzoMUY8DNt9WN3D41wc6iaD-8A'
+  },
+  body: '{"id":"3123e4567-e89b-12d3-a456-426614175000","post":{"username":"JohnDoe","content":"This is a discussion about the impact of climate change on our planet and what we can do to mitigate it. #ClimateChange #Environment #Sustainability","media":[{"type":"image","url":"attachment1_url"},{"type":"video","url":"attachment2_url"}],"location":"New York, NY","language":"en","hashtags":[{"id":"1b671a64-40d5-491e-99b0-da01ff1f3341","text":"ClimateChange"},{"id":"6ecd8c99-4036-403d-bf84-cf571e9126d9","text":"Environment"},{"id":"7e7172a8-b2b8-44a0-a613-466d2d26fd2d","text":"Sustainability"}],"mentions":[{"id":"eb1b5b1e-b37b-4174-a8b8-1e9ea1a1d74f","username":"JaneDoe","date":"2022-09-13T14:30:00Z"},{"id":"fa7b1b2e-c37c-4175-a9b9-2e9ea2a2d75f","username":"BobSmith","date":"2022-09-13T14:35:00Z"}],"replyTo":[{"id":"cb2b3b2d-d37d-4176-a8b8-3e9ea3a3d76f","username":"AliceJohnson","date":"2022-09-13T14:28:00Z"}],"scheduled":false,"scheduledAt":null,"reviewStatus":{"state":"reviewed","reviewedBy":"moderator123","decision":"approved","reason":null}}}'
+};
+
+fetch('https://proxy.climateaware.eco/db/rollthecloudinc/vertigoapp-objects-prod/shapeshifter/examples/zing/post/3123e4567-e89b-12d3-a456-426614175000', options)
+  .then(response => response.json())
+  .then(response => console.log(response))
+  .catch(err => console.error(err));
+```
 
 ### Creating a Web Page on ClimateAware.eco
  
