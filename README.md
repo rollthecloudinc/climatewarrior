@@ -380,6 +380,7 @@ ClimateWarrior is a pioneering GitHub App, dedicated to creating eco-friendly so
 * GoFundMe Campaign: Help us reach our funding goals by donating to our GoFundMe campaign. Your contribution will go a long way in supporting our mission.
 * PayPal Donations: PayPal is a quick and secure way to contribute. You can choose to make a one-time donation or set up a recurring donation to support us on an ongoing basis.
 * Bonfire Apparel Shop: Show your support and raise awareness by wearing ClimateWarrior gear. Visit our Bonfire shop to view our collection of eco-friendly t-shirts, hoodies, and more.
+* ArtWork Donations: Moreover, we invite artists to submit their artwork for our Bonfire apparel line.
 
 Remember, every contribution, no matter how small, helps us in our fight against climate change. Thank you for your support!
 
