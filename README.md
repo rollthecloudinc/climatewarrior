@@ -66,55 +66,88 @@ We use AWS Simple Email Service (SES) for transactional emails. As our account i
 
 ### Create New Repository
 
-Next, you'll need to create a new repository. We have a specific template for this to ensure consistency and ease of use. Visit [this link](https://oai.azure.com/portal/15de48fc89c64b0eaed5282bdfe2c9a8/URL) to create a new repository using the provided template. This will guide you through the process and ensure that the repository is set up correctly.
+Next, you'll need to create a new repository. We have a specific template for this to ensure consistency and ease of use. Visit [this link](https://github.com/rollthecloudinc/spearhead-objects-prod) to create a new repository using the provided template. This will guide you through the process and ensure that the repository is set up correctly.
+
+<img width="1440" alt="Screen Shot 2023-07-04 at 10 56 41 AM" src="https://github.com/rollthecloudinc/spearhead/assets/73197190/7320528b-7c4f-45e8-a0db-0257e8c484f8">
 
 ### Install Climate Warrior GitHub App
 
-Now it's time to install the Climate Warrior GitHub App. Visit the [Climate Warrior GitHub App installation page](https://oai.azure.com/portal/15de48fc89c64b0eaed5282bdfe2c9a8/URL) and click the 'Install App' button. You'll be redirected to GitHub to authorize the app and complete the installation. This step links the Climate Warrior app with your GitHub account, allowing it to interact with your repositories.
+Now it's time to install the Climate Warrior GitHub App. Visit the [Climate Warrior GitHub App installation page]() and click the 'Install App' button. During this step, you'll need to configure the app's access permissions. You can choose to allow the app to write to all repositories under your account or only to specific ones such as the one created in the first step for maximum security.
 
 ### Complete Installation
 
 After a successful installation, you will be provided with user info and a new user ID. These are important credentials, so make sure to save them in a secure location. You will need them for future interactions with the Climate Warrior app.
 
+<img width="1440" alt="Screen Shot 2023-07-04 at 11 32 52 AM" src="https://github.com/rollthecloudinc/spearhead/assets/73197190/59be9d57-a13b-44f4-b00d-4ff90f0be4e5">
+
 ### Check Your Email
 
-Following the installation, you'll receive an email from [sso@druidcloud.io](mailto:sso@druidcloud.io) with the subject line "Greetings, [Your Username]". This email will contain a temporary password that you will use to log in to the Climate Warrior app for the first time.
+Following the installation, you'll receive an email from sso@climateaware.eco with the subject line "Greetings, [Your Username]". This email will contain a temporary password that you will use to log in to the Climate Warrior app for the first time.
+
+<img width="1440" alt="Screen Shot 2023-07-04 at 11 35 49 AM" src="https://github.com/rollthecloudinc/spearhead/assets/73197190/f8ce953d-85b3-4cd4-8d18-b707d855fafa">
 
 ### Visit the URL
 
 With your temporary password in hand, visit [this URL](https://oai.azure.com/portal/15de48fc89c64b0eaed5282bdfe2c9a8/URL). Click the menu icon in the top left corner of the page to reveal a login button.
 
+<img width="1440" alt="Screen Shot 2023-07-04 at 11 39 01 AM" src="https://github.com/rollthecloudinc/spearhead/assets/73197190/1e50c6ee-bca0-44b7-a396-14b993337b8e">
+<img width="1440" alt="Screen Shot 2023-07-04 at 11 39 20 AM" src="https://github.com/rollthecloudinc/spearhead/assets/73197190/2a41902c-2da8-4cab-9fb4-dd089e545107">
+
 ### Login to Climate Warrior App
 
 Click the login button and enter your GitHub username and the temporary password you received via email. This will log you into the Climate Warrior app.
+
+<img width="1440" alt="Screen Shot 2023-07-04 at 11 39 31 AM" src="https://github.com/rollthecloudinc/spearhead/assets/73197190/d291efd3-26f4-4478-9ea0-90a4c014410c">
+<img width="1440" alt="Screen Shot 2023-07-04 at 11 39 31 AM" src="https://github.com/rollthecloudinc/spearhead/assets/73197190/278d9324-3ecc-4ea1-a29f-7ed20ac3c020">
 
 ### Reset Password
 
 After logging in with the temporary password, you'll be prompted to reset your password. Follow the instructions on the screen. You will be asked to check your email for a verification code. Use this code to reset your password to something more secure and memorable.
 
-### Install GitHub App
+<img width="1440" alt="Screen Shot 2023-07-04 at 11 41 15 AM" src="https://github.com/rollthecloudinc/spearhead/assets/73197190/b9d84b63-7df4-4af5-a8d1-7d3f0f0198b7">
 
-Return to the [Climate Warrior GitHub App page](https://oai.azure.com/portal/15de48fc89c64b0eaed5282bdfe2c9a8/URL) and click 'Install'. During this step, you'll need to configure the app's access permissions. You can choose to allow the app to write to all repositories under your account or only to specific ones.
+### Test JSON API
 
-### Test HEDGE
-
-To ensure the installation was successful, we recommend testing HEDGE by using [Insomnia](https://oai.azure.com/portal/15de48fc89c64b0eaed5282bdfe2c9a8/URL). Insomnia is a free and open-source tool that makes it easy to test HTTP/REST-based APIs.
+To ensure the installation was successful, we recommend testing The API by using [Insomnia](https://insomnia.rest/). Insomnia is a free and open-source tool that makes it easy to test HTTP/REST-based APIs.
 
 ### Obtain id_token
 
 Log in to the Climate Warrior app again to obtain an id_token. You can copy this token from the browser's developer tools (usually accessed by pressing F12).
 
+<img width="1440" alt="Screen Shot 2023-07-04 at 12 13 00 PM" src="https://github.com/rollthecloudinc/spearhead/assets/73197190/b9d82f76-9f29-49b3-bb9d-713fe33fb96e">
+
 ### Create a New POST Request
 
 After installing Insomnia, create a new POST request using the id_token you obtained. In the URL for the request, replace {user} and {repo} with your GitHub username and the name of the repository you granted the Climate Warrior GitHub app access to.
+
+url: https://proxy.climateaware.eco/db/{user}/{repo}/shapeshifter/test/one
+body:
+```json
+{
+	"id": "one",
+	"title": "tracxxxxxxxxe"
+}
+```
+
+<img width="1440" alt="Screen Shot 2023-07-04 at 12 50 28 PM" src="https://github.com/rollthecloudinc/spearhead/assets/73197190/94368990-8499-4b5c-bd7f-21a39731a8c7">
+<img width="1428" alt="Screen Shot 2023-07-04 at 12 52 20 PM" src="https://github.com/rollthecloudinc/spearhead/assets/73197190/1bdcab63-c901-4be4-b5c1-4f02c4acba9f">
 
 ### Set Up the Repo as a GitHub Pages Website
 
 Now, set up the repository as a GitHub Pages website. Go to the settings of the repository, and under the 'GitHub Pages' section, select 'master' for the 'Branch' and click 'Save'.
 
+<img width="1440" alt="Screen Shot 2023-07-04 at 1 01 14 PM" src="https://github.com/rollthecloudinc/spearhead/assets/73197190/58518a64-a190-41f3-956e-e90cf6ec911a">
+<img width="1440" alt="Screen Shot 2023-07-04 at 1 02 32 PM" src="https://github.com/rollthecloudinc/spearhead/assets/73197190/b8201aab-76eb-4485-be86-3237be201a9c">
+<img width="1440" alt="Screen Shot 2023-07-04 at 1 03 41 PM" src="https://github.com/rollthecloudinc/spearhead/assets/73197190/c2ad8b40-47bd-4b4e-839b-d6fcf8b007d4">
+<img width="1439" alt="Screen Shot 2023-07-04 at 1 05 10 PM" src="https://github.com/rollthecloudinc/spearhead/assets/73197190/5aef8474-761a-4624-be46-79ba75107d19">
+
 ### Verify the Website
 
 After saving the changes, refresh the page after a minute. A banner at the top should display the URL
+
+* https://thenetzero.github.io/spearhead-objects-prod/test/one.json
+
+<img width="1440" alt="Screen Shot 2023-07-04 at 1 12 00 PM" src="https://github.com/rollthecloudinc/spearhead/assets/73197190/4ea5bda3-d609-4819-92cd-06aac82b5b72">
 
 ## User Guide
 
