@@ -3,39 +3,20 @@
 // The list of file replacements can be found in `angular.json`.
 // https://cognito-idp.{region}.amazonaws.com/{userPoolId}/.well-known/jwks.json.
 
-const signingKeys = {
-  "keys": [ 
-    {
-      "alg":"RS256",
-      "e":"AQAB",
-      "kid":"zObBQ6QfR5HnKAJd9HhoObmJqojropaz54zqf2+1zqk=",
-      "kty":"RSA",
-      "n":"o_K4yCMajjivLFuH48oM9u2m5OXg-hAJ7wRv97lpm0o_ZZAM2rY6oFwwL7lVGVCKcH048mifadzadH1Jooa6VGPq6I4zFOey0cbMAwMCyNR-rzHN0jMlHyBEExFSgtAWF1Q0u7j28F3F8LX2zEhyaPFC7ir42e1q2zyQ6Oh8kutRQm4pkrWjajrpmOI-KnkYjpmyFOFdgDYNgdFIduGhT0kZNVPPxyoOsZ6nuIJOZP4o7yTa9vJSRIdtD9k17tzFMympQoW9ZVccVMomey1iQKinHmRkcPwVFjiU8H1gSWkfdv3WsnJPNzGo2e3gAEF8d-JlRQ_XhZpAOi1_NSaGfQ",
-      "use":"sig"
-    },
-    {
-      "alg":"RS256",
-      "e":"AQAB",
-      "kid":"ZxSNiLaZMDgs5ev5t0foAVvoY3qvghD8MltmUceD/0I=",
-      "kty":"RSA",
-      "n":"lzC78mzfHoxtE5KVfAvkbVUw-X6tUrBAIcVujFpdGF8He0FlWxctGnisByT1s00mdAZ44YUFSDbx4gArHRRAYlYgMlI3njFKuoRGcHIkL1w4fQcisij3OM8nWdZJXdNSueb1SzhoR5xsDhPZnRGMMs3f0QohA_gCQ0Z51cSUN0EadUBW66dCT3lVdeSwnc8jwwbTas-mKY5958u9kT9fdj69F_9HwTfaFKyYu3nnO04E2InoPD_K4xZ4_oDfCVyKyjB2HLVtwhxfx6ly4Wh_p-McXOg75WcfPgSQg6IopJ5m9AteTiLDld9kHrey0KvH4K3Sztc90SvZOiV4AWHrKQ",
-      "use":"sig"
-    }
-  ]
-};
+const signingKeys = {"keys":[{"alg":"RS256","e":"AQAB","kid":"d41dkKfuBCszyYg1SQLu3w0bcXe9/CChhHisJ+6T2+E=","kty":"RSA","n":"yhB5xFjGfceNwFVnnCNOmIsl2mNIVEU6QUwpsUqtvxsA0gVzS4gRj0_qq5nLRNrfO9F287G-fllGaTJXkjEbj22bzpVsojg2bM5OIY4cGpjrfeWdG8CGYKsMmHTfgE55x0f9TT98gYTnotKwVbcSmu2y6bvLaSVAcCeohbUdVvH_eYHBAR6acABHYBUDY9tUF0fRv-tfsOaMmiZaCwTH9GPItGnea7SgdRGp_6aZPJ_X0g0e9ImnrfBPV16YBO21i-pWeknyg-2Rbs6wnosilv_2beTFX0T95eGIX_yeCT9MfpC0wmiukI705TFj1QjEeBuAtvrqzvj1DqwSXuHvpQ","use":"sig"},{"alg":"RS256","e":"AQAB","kid":"rWKl3yki4YK1v1C5Tj3Z6wzitwf/3QGBDHgnfWOr8Gk=","kty":"RSA","n":"vWFu4ToGvfNMQqc0kqtkPDBgA21WOt48AmOojV2W1N5lTB3qtcIIaLNGx0DM4sKvE5t83Xyq67hGp_ROlDwc8gCJYZkNnrl2FkYz6JHyUZvpokUblrhUbW02Q7dE5qD3VXwr9JidjxoMwcc5ZXKtQEldJAgaYSqXRzVsZHjFJ9yx_iJfzXZxfLvoRw16brbuVftQ3XQKIVxY3PFPc1mRfme-QInb9CrsVNe_I4FvCBD-VA1Cs3Mfo7eVG6wvg7SMLsbMUDf9I5VvzhgtJjheLjV9PhgvhPr2t5g6DCjhUd2SFJFJ62xCKM12TyWeQE_bq88UOdI0v0CQ0ikF1Xm2nQ","use":"sig"}]}
 
 export const environment = {
   production: true,
   site: 'vertigoapp',
   apiGatewaySettings: {
     // endpointUrl: 'https://localhost:44340',
-    endpointUrl: "https://us-east-1.climateaware.eco/rollthecloudinc/vertigoapp-objects-prod/shapeshifter"
+    endpointUrl: "https://uj9gd1wzt9.execute-api.us-east-1.amazonaws.com/rollthecloudinc/vertigoapp-objects-prod/shapeshifter"
   },
   mediaSettings: {
-    endpointUrl: 'https://us-east-1.climateaware.eco/vertigoapp/media',
+    endpointUrl: 'https://uj9gd1wzt9.execute-api.us-east-1.amazonaws.com/vertigoapp/media',
     cloudinaryUrl: 'https://api.cloudinary.com/v1_1/dj4vvkgzw',
     uploadPreset: 'i0hm4opm',
-    imageUrl: 'https://us-east-1.climateaware.eco/vertigoapp',
+    imageUrl: 'https://uj9gd1wzt9.execute-api.us-east-1.amazonaws.com/vertigoapp',
     bucket: 'classifieds-ui-prod',
     prefix: 'media/'
   },
@@ -59,17 +40,17 @@ export const environment = {
     clientId: '0oa4qw6inqps2eUgC4x6',
   },
   cognitoSettings: {
-    identityPoolId: 'us-east-1:51af715f-31cf-4200-b43b-6c1ea1b62f5e',
+    identityPoolId: 'us-east-1:88a3314e-4f05-484d-a59c-6809a8a876d4',
     region: 'us-east-1',
-    userPoolId: 'us-east-1_ObsPF5JdM'
+    userPoolId: 'us-east-1_3mZuILnXX'
   },
   panelsSettings: {
-    openSearchDomain: 'search-classifieds-ui-prod-o5unofrr3c4qb3ykfrxebh2e4a',
+    openSearchDomain: 'search-rtc-classifieds-prod-rtc-fbaee2gxt3iyo3h5nndiyiuvpi',
     s3Bucket: 'classifieds-ui-prod',
     objectsRootUrl: 'https://rollthecloudinc.github.io/vertigoapp-objects-prod'
   },
   alienaliasSettings: {
-    openSearchDomain: 'search-classifieds-ui-prod-o5unofrr3c4qb3ykfrxebh2e4a'
+    openSearchDomain: ''
   },
   rumSettings: {
     appId: '',
@@ -78,26 +59,26 @@ export const environment = {
     region: ''
   },
   clientSettings: {
-    authority: 'https://sso.climateaware.eco',
-    client_id: '37lke0kuqac07fs1mk9mp2h471',
-    redirect_uri: 'https://climatewarrior.eco/auth-callback',
-    silent_redirect_uri: 'https://climatewarrior.eco/silent-refresh.html',
+    authority: 'https://auth-prod-rtc.auth.us-east-1.amazoncognito.com',
+    client_id: '1ho53ncqvtlakp3qd5t58cnbjk',
+    redirect_uri: 'https://app.problemsolver.eco/auth-callback',
+    silent_redirect_uri: 'https://app.problemsolver.eco/silent-refresh.html',
     //redirect_uri: 'http://localhost:4000/auth-callback',
     //silent_redirect_uri: 'https://localhost:4000/silent-refresh.html',
     response_type: "code",
-    scope:"openid profile aws.cognito.signin.user.admin ads_api/ads_api taxonomy_api/taxonomy_api chat/chat media_api/media_api profiles_api/profiles_api", /*'ads_api media_api chat IdentityServerApi taxonomy_api api_gateway",*/
+    scope:"openid profile", /*'ads_api media_api chat IdentityServerApi taxonomy_api api_gateway",*/
     filterProtocolClaims: true,
     loadUserInfo: true,
     automaticSilentRenew: true,
     stateStore: undefined,
     userStore: undefined,
     metadata: {
-      issuer: "https://cognito-idp.us-east-1.amazonaws.com/us-east-1_ObsPF5JdM",
-      authorization_endpoint: "https://sso.climateaware.eco/oauth2/authorize",
-      userinfo_endpoint: "https://sso.climateaware.eco/oauth2/userInfo",
-      end_session_endpoint: "https://sso.climateaware.eco/logout",
-      token_endpoint: "https://sso.climateaware.eco/oauth2/token",
-      jwks_uri: "https://sso.climateaware.eco/us-east-1_z8PhK3D8V"
+      issuer: "https://cognito-idp.us-east-1.amazonaws.com/us-east-1_3mZuILnXX",
+      authorization_endpoint: "https://auth-prod-rtc.auth.us-east-1.amazoncognito.com/oauth2/authorize",
+      userinfo_endpoint: "https://auth-prod-rtc.auth.us-east-1.amazoncognito.com/oauth2/userInfo",
+      end_session_endpoint: "https://auth-prod-rtc.auth.us-east-1.amazoncognito.com/logout",
+      token_endpoint: "https://auth-prod-rtc.auth.us-east-1.amazoncognito.com/oauth2/token",
+      jwks_uri: "https://auth-prod-rtc.auth.us-east-1.amazoncognito.com/us-east-1_3mZuILnXX"
     },
     signingKeys: signingKeys.keys
   }
